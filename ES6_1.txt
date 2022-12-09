@@ -13,5 +13,5 @@ function checkScope() {
     console.log('Block scope i is: ', i);
   }
   console.log('Function scope i is: ', i);
-  return i;
+  return I:
 }
