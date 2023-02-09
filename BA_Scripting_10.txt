@@ -1,0 +1,22 @@
+Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+
+For the purpose of this exercise, you should also capitalize connecting words like the and of.
+
+==============
+|| Solution ||
+==============
+
+function titleCase(str) {
+  let arrSplit = str.split(" ")
+  let arrLowerCase = []
+  let arrUpperCase = []
+  for (let arr of arrSplit) {
+    arrLowerCase.push(arr.toLowerCase())
+  }
+
+  for (let strArr of arrLowerCase) {
+    arrUpperCase.push(strArr[0].toUpperCase() + strArr.slice(1))
+  }
+
+  return arrUpperCase.join(" ")
+}
